@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
+}
+@media only screen and (min-width: 601px)
+  .container {
+    width: 85%;
+}
+@media only screen and (min-width: 993px)
+  .container {
+    width: 70%;
+}
+
+
+.info-list{
+  color: #ffffff;
+}
+.email{
+  margin: 10px auto 10px;
+  font-family: monospace;
+}
+.social-links {
+ /* float: right;*/
+ display: inline-block;
+}
+.social{
+  padding-right: 5px;
+}
+
+.social-links > a {
+  color: inherit;
+  text-decoration: none;
+}
+.item{
+  min-height: 150px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+
+.item-img{
+  /*min-height: 200px !important;*/
+}
+
+.item-img > img{
+  box-shadow: 4px 4px 3px -3px rgba(20%,20%,40%,0.5);
+}
+
+.item-info{
+  vertical-align: top;
+}
+
+.pubd {  
+  font-size: 18px;
+  font-weight: 300;
+}
+.pubimg {
+  text-align: center;
+}
+.pubimg img {
+  max-width: 100%;
+}
+.pubt {
+  font-size: 22px;
+  font-weight:400;
+  color: #000;
+}
+.puba {
+  font-size: 18px;
+  color: #900;
+}
+.pubv {
+  color: #090;
+  font-size: 16px;
+}
+.publ {
+  padding-top: 10px;
+}
+.publ li {
+  border: 1px solid #CCC;
+  padding: 5px;
+  margin: 5px 2px;
+  display: inline-block;
+}
+.pubwrap {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #DDD;
+}
+.date{
+  color: #777777;
+  font-size: 16px !important;
+}
+.spacer{
+  width: 100%;
+  height: 0px;
+  margin: 20px 0px;
+  background-color: #555555 !important;
+}
+#home { 
+    background: url(../images/SF.JPG) no-repeat fixed center;
+    height: auto;
+    width: 100%;
+    height: 70%; 
+    margin: 0 0; 
+    position: relative; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding: 100px 0px;
+    background-size: cover;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}

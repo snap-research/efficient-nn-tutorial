@@ -1,0 +1,281 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CVPR 2023 Efficient Neural Networks: From Algorithm Design to Practical Mobile Deployments
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="page-top">
+  <div class="navbar-fixed">
+    <nav class="teal lighten-2" role="navigation">
+      <div class="nav-wrapper">
+        <ul class="center hide-on-med-and-down  nav navbar-nav navbar-center">
+          <li><a class="page-scroll" href="#page-top" style="color:#CD853F;font-size:20px">Home</a></li>
+          <li><a class="page-scroll" href="#overview" style="color:#CD853F;font-size:20px">Overview</a></li>
+          <li><a class="page-scroll" href="#organizer" style="color:#CD853F;font-size:20px">Organizers</a></li>
+          <li><a class="page-scroll" href="#schedule" style="color:#CD853F;font-size:20px">Program</a></li>
+          <li><a class="page-scroll" href="#speaker" style="color:#CD853F;font-size:20px">Speakers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <table border="0" align="center">
+      <tr>
+        <td width="700" align="center" valign="middle">
+          <h3>CVPR 2023 Tutorial on</h3>
+          <span class="title">Efficient Neural Networks: From Algorithm Design to Practical Mobile Deployments</span>
+        </td>
+      </tr>
+    </table>
+    <h3 align='center'> <b>Date:</b> Morning (PT), June 18, 2023. </h3>
+
+    <!--h3 align="center">7:00~10:30 am (PDT), June 20, 2021</h3-->
+    <!--h3 colspan="3" align="center"><br> Slides and recorded videos will be provided on this webpage.</h3-->
+    <!-->
+        <!--h3 colspan="3" align="center"><br>The tutorial can be accessed at: <a a href=https://ohyay.co/s/cvpr-tutorial-on-unlocking-creativity> this URL </a>.
+        <br>
+        <!--Anyone can join! </h3-->
+
+    <!-- <h3 align="center">The recordings are all available under this <a href="https://vimeo.com/766471377"> link </a>!!
+    </h3> -->
+    <!--   <p><img src="figures/teaser.jpg" width="1000" align="middle" /></p> -->
+  </div>
+
+  </br>
+
+
+  <div class="container" id="overview">
+    <h2>Overview</h2>
+    <!-- <div class="row">
+      <div class="col-md-6 cl-sm-6">
+        <video class="cam_video" loop autoplay muted>
+          <source src="videos/shoe-1_record_mp4.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-6 cl-sm-6">
+        <video class="img-responsive" loop autoplay muted>
+          <source src="videos/shoe_1.mp4" type="video/mp4">
+        </video> </center>
+      </div>
+
+    </div> -->
+    <div class="row hidden-xs hidden-sm hidden-md">
+      <div class="col-md-6 cl-sm-6">
+        <video class="img-responsive" style="width: 100%; height: 100%;" loop autoplay muted>
+          <source src="videos/cat.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="col-md-5 cl-sm-5">
+        <video class="img-responsive" style="width: 100%; height: 100%;" loop autoplay muted>
+          <source src="videos/mobile-r2l.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <br />
+
+    <div class="overview">
+      </br>
+      <p>Recent breakthroughs in computer vision unlock a number of applications previously unavailable to users.
+        Discriminative tasks, such as detection, segmentation, pose & depth estimation, and others, reach incredible
+        accuracy. Generative applications of adversarial networks, autoencoders, diffusion models, image-to-image
+        translation, video synthesis, and animation methods show high fidelity of their inputs, making it hard to be
+        distinguished from the real by even a human observer. Neural Radiance Fields promise democratized object
+        reconstruction and rendering for various applications.</p>
+
+      <p>These breakthroughs, however, come with the cost of high computational requirements of such models. For
+        example,
+        transformer models with quadratic complexity according to the token length, image-to-image translation comes
+        with large FLOPs, and neural rendering approaches require sophisticated rendering pipelines. This translates
+        into the need to run such models on a server-side, elevated service cost, and suboptimal user experience due to
+        the latency incurred for transmitting the data and receiving the result.</p>
+
+
+      <p>Bringing such methods to edge devices is notoriously difficult. Existing works are targeting the compression of
+        large models that do not necessarily lead to on-device acceleration, as it requires not only neural network
+        compression background but also domain-specific background. For instance, to run neural rendering on a device,
+        one needs to be experienced in graphics; to run generative models, one needs to know how to reduce the size
+        without sacrificing the quality of the output. Speeding up neural networks for server-side inference will not
+        necessarily improve edge inference, as deploying them on edge devices requires considerable model size
+        reductions, sometimes at a couple of orders of magnitude.</p>
+
+      <p>On the other hand, the benefits of edge inference are obvious:
+        1. The cost of service is greatly reduced.
+        2. User privacy is elevated by design, as all the processing runs on the device without data transmission
+        between
+        the server and the device.
+        3. It facilitates user interaction, as the absence of transmission reduces the latency.
+        4. Reduces the cycle time to build many novel CV-based applications as expensive infrastructure is not required.
+      </p>
+
+      <p>
+        This tutorial will introduce effective methodologies for re-designing algorithms for efficient content
+        understanding, image generation, and neural rendering. Most importantly, we show how the algorithms can be
+        efficiently deployed on mobile devices, eventually achieving
+        real-time interaction between users and mobile devices.
+      </p>
+    </div>
+  </div>
+
+  </br>
+
+
+
+  <div class="container" id="organizer">
+    <h2>Organizers</h2>
+    <div>
+
+      <div class="instructor">
+        <a href="https://alanspike.github.io/">
+          <div class="instructorphoto"><img src="figures/jian.png"></div>
+          <div>Jian Ren<br>Creative Vision, Snap Research</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a href="http://www.stulyakov.com/">
+          <div class="instructorphoto"><img src="figures/sergey.jpg"></div>
+          <div>Sergey Tulyakov<br>Creative Vision, Snap Research</div>
+        </a>
+      </div>
+
+      <div class="instructor">
+        <a href="https://www.linkedin.com/in/erichuju/">
+          <div class="instructorphoto"><img src="figures/eric.jpeg"></div>
+          <div>Ju (Eric) Hu<br>Snap Inc.</div>
+        </a>
+      </div>
+
+
+    </div>
+
+    <p></p>
+  </div>
+
+  </br>
+
+
+  <div class="container">
+    <h2>Program</h2>
+    <table class="program">
+      <tr>
+        <td width="70%">
+          <p style="font-size:20px"> <b>Introduction</b> </a> </p>
+        </td>
+        <td width="20%"><em>Sergey Tulyakov</em></td>
+        <!-- <td width="10%"><b>8:50 - <br /> 9:00</b></td> -->
+      </tr>
+
+
+      <tr>
+        <td>
+          <p style="font-size:20px"> <b>Efficient networks for generic computer vision tasks</b> </p>Introduction of the
+          bottleneck for the state-of-the-art models, i.e., high computation cost on mobile devices, and how to design
+          efficient networks to solve these problems.
+
+        </td>
+        <td><em>Jian Ren</em></td>
+        <!-- <td><b>9:50 - <br /> 10:40</b></td> -->
+      </tr>
+
+      <tr>
+        <td>
+          <p style="font-size:20px"> <b>Efficient networks for image-to-image translation and stylization tasks</b> </p>
+          Introduction of the recent advances in image generation, the limitations of these works, and how to optimize
+          them to enable mobile applications.
+
+        </td>
+        <td><em>Jian Ren, <br /> Sergey Tulyakov</em></td>
+        <!-- <td><b>10:50 - <br /> 11:30</b></td> -->
+      </tr>
+
+      <tr>
+        <td>
+          <p style="font-size:20px"> <b>Efficient networks for object capture, reconstruction, and neural rendering</b>
+          </p> Introduction of the emerging efforts on neural rendering, especially for Neural Radiance Fields (NeRF).
+          The challenges for deploying NeRF for real-time usages and how to alleviate such issues for building on-device
+          real-time neural rendering.
+
+        </td>
+        <td><em>Jian Ren, <br /> Sergey Tulyakov</em></td>
+        <!-- <td><b>11:40 - <br /> 12:25</b></td> -->
+      </tr>
+
+      <tr>
+        <td>
+          <p style="font-size:20px"> <b>Efficient deployment on mobile devices</b>
+          </p> Methods for how to efficiently deploy the algorithms on mobile devices to build computer vision related
+          applications.
+
+
+        </td>
+        <td><em>Ju (Eric) Hu</em></td>
+        <!-- <td><b>11:40 - <br /> 12:25</b></td> -->
+      </tr>
+
+      <td>
+        <p style="font-size:20px"> <b>Closing Remarks</b></p>
+      </td>
+      <td><em>Sergey Tulyakov</em></td>
+      <!-- <td><b>12:25 - <br /> 12:30</b></td> -->
+
+
+      </tr>
+
+
+    </table>
+  </div>
+
+  </br>
+
+  <div class="container" id='speaker'>
+    <h2>About the Speakers</h2>
+    <div class="schedule">
+      <p><b>Jian Ren</b> is a Lead Research Scientist in the Creative Vision team at Snap Research. His
+        research focuses on content understanding, image and video generation and manipulation, and methods of designing
+        efficient neural networks for the former two areas. His works result in 20+ papers published in top-tier
+        conferences
+        (CVPR, ICCV, ECCV, ICLR, NeurIPs, ICML) and patents contributing to multiple products. He got Ph.D. in Computer
+        Engineering from Rutgers University in 2019 and a B.S. from the University of Science and Technology of China in
+        2014. Before joining Snap Inc, Jian did internships in Adobe, Snap, and Bytedance. </p>
+
+      <p><b>Sergey Tulyakov</b> is a Principal Research Scientist at Snap Inc, where he leads the Creative Vision team.
+        His work focuses on creating methods for manipulating the world via computer vision and machine learning. This
+        includes human and object understanding, photorealistic manipulation and animation, video synthesis, prediction
+        and retargeting. He pioneered the unsupervised image animation domain with MonkeyNet and First Order Motion
+        Model that sparked a number of startups in the domain. His work on Interactive Video Stylization received the
+        Best in Show Award at SIGGRAPH Real-Time Live! 2020. He has published 30+ top conference papers, journals and
+        patents resulting in multiple innovative products, including Snapchat Pet Tracking, OurBaby, Real-time Neural
+        Lenses (gender swap, baby face, aging lens, face animation) and many others. Before joining Snap Inc., Sergey
+        was with Carnegie Mellon University, Microsoft, NVIDIA. He holds a PhD degree from the University of Trento,
+        Italy.</p>
+
+      <p><b>Ju (Eric) Hu</b> is a Machine Learning Engineer at Snap Inc. His work mainly focuses on supporting
+        and optimizing Snap's in-house ML framework called SnapML. SnapML aims to provide fast and efficient inference
+        by leveraging different hardwares to achieve real-time performance on mobile devices. Before joining Snap, he
+        worked at a medical imaging startup focusing on skin lesion detection and classification. He graduated from UCLA
+        with a B.S. in Math.
+      </p>
+
+    </div>
+  </div>
+
+  </br>
+
+  <div class="containersmall">
+    <p>Please contact <a href="mailto:jren@snap.com">Jian Ren (jren@snap.com)</a> or <a
+        href="mailto:stulyakov@snap.com">Sergey Tulyakov
+        (stulyakov@snap.com)</a> if you have question.<br>
+      The webpage template is by the courtesy of awesome <a href="https://gkioxari.github.io/">Georgia</a>.</p>
+  </div>
+
+</body>
+
+</html>

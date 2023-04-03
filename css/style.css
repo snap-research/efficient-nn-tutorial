@@ -1,0 +1,228 @@
+/* CSS Document */
+
+
+body {
+	/*background: #f7f7f7;*/
+	background: #e3e5e8;
+	color: #f7f7f7;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+/* Headings */
+
+h1 {
+	font-size: 30pt;
+}
+
+h2 {
+	font-size: 22pt;
+}
+
+h3 {
+	font-size: 14pt;
+}
+
+
+/* Hyperlinks */
+
+a:link {
+	color: #1772d0;
+	text-decoration: none;
+}
+
+.cam_video {
+	object-fit: fill;
+}
+
+a:visited {
+	color: #CD853F;
+	#color: #1772d0;
+	text-decoration: none;
+}
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f09228;
+	text-decoration: none;
+}
+
+
+/* Main page container */
+
+video {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	width: 1024px;
+	min-height: 200px;
+	margin: 0 auto;
+	/* top and bottom, right and left */
+	border: 1px hidden #000;
+	/* border: none; */
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	/* top, right, bottom, left */
+	color: #4d4b59;
+	background: #f7f7f7;
+}
+
+.overview {
+	text-align: left;
+}
+
+
+.containersmall {
+	width: 1024px;
+	min-height: 10px;
+	margin: 0 auto;
+	/* top and bottom, right and left */
+	border: 1px hidden #000;
+	/* border: none; */
+	text-align: left;
+	padding: 1em 1em 1em 1em;
+	/* top, right, bottom, left */
+	color: #4d4b59;
+	background: #f7f7f7;
+}
+
+.schedule {
+	width: 900px;
+	min-height: 200px;
+	margin: 0 auto;
+	/* top and bottom, right and left */
+	/*border: 1px solid #000;*/
+	border: none;
+	text-align: left;
+	padding: 1em 1em 1em 1em;
+	/* top, right, bottom, left */
+	color: #4d4b59;
+	background: #f7f7f7;
+}
+
+/* Title and menu */
+
+.title {
+	font-size: 22pt;
+	margin: 1px;
+}
+
+.menubar {
+	white-space: nowrap;
+	margin-bottom: 0em;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+/* Announcements */
+
+.announce_date {
+	font-size: .875em;
+	font-style: italic;
+}
+
+.announce {
+	font-size: inherit;
+}
+
+.schedule_week {
+	font-size: small;
+	background-color: #CCF;
+}
+
+
+/* Schedule */
+
+table.schedule {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: none;
+	border-color: #000;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+
+
+/* Notes */
+
+table.notes {
+	border: none;
+	border-collapse: collapse;
+}
+
+.notes td {
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+/* Problem sets */
+
+table.psets {
+	/*	border: none;*/
+	border-collapse: collapse;
+}
+
+.psets td {
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+.acknowledgement {
+	font-size: .875em;
+}
+
+.code {
+	font-family: "Courier New", Courier, monospace
+}
+
+.instructorphoto img {
+	width: 120px;
+	border-radius: 120px;
+	margin-bottom: 10px;
+}
+
+.instructorphotosmall img {
+	width: 60px;
+	border-radius: 60px;
+	margin-bottom: 10px;
+}
+
+.instructor {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+table.program {
+	border: 1px solid gray;
+}
+
+.program td {
+	border: 1px solid gray;
+}
+
+.program tr {
+	border: 1px solid gray;
+}
